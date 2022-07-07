@@ -1,4 +1,5 @@
 .transaction_history {
+    width: 100%;
     margin-bottom: 20px;
     background-color: rgb(218, 214, 214);
 }
