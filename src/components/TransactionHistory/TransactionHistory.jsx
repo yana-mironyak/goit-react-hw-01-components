@@ -1,3 +1,4 @@
+import { toHaveDisplayValue } from '@testing-library/jest-dom/dist/matchers';
 import PropTypes from 'prop-types';
 import css from './TransactionHistory.module.css';
 
@@ -25,6 +26,10 @@ export const TransactionHistory = ({ items }) => {
 }
 
 TransactionHistory.propTypes = {
-    items: PropTypes.arrayOf(PropTypes.shape).isRequired,
+    items: PropTypes.arrayOf(PropTypes.shape({
+        type: PropTypes.string,
+        amount: PropTypes.string,
+        currency: PropTypes.string,
+    })),
 }
 
