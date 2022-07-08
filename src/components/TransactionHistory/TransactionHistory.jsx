@@ -1,4 +1,3 @@
-import { toHaveDisplayValue } from '@testing-library/jest-dom/dist/matchers';
 import PropTypes from 'prop-types';
 import css from './TransactionHistory.module.css';
 
